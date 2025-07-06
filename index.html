@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>unit converter web</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>
+      Unit Converter
+    </h1>
+  </header>
+
+  <main>
+    <div class="unit-title-container">
+      <h1 class="active">Length</h1>
+      <h1>Weigth</h1>
+      <h1>Temperature</h1>
+    </div>
+
+    <section class="form-container">
+      <form id="lengthForm">
+        <div>
+          <label for="lengthForm">Enter the length to convert</label>
+          <input id="lengthForm" type="text" required />
+        </div>
+
+        <div>
+          <label for="baseUnit">Unit to convert from</label>
+          <input id="baseUnit" type="text" required />
+        </div>
+
+        <div>
+          <label for="resultUnit">Unit to convert to</label>
+          <input id="resultUnit" type="text" required />
+        </div>
+
+        <button>
+          Convert
+        </button>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
