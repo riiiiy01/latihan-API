@@ -12,8 +12,6 @@ header {
 }
 
 .unit-title-container {
-  text-align: center;
-  margin-top: 3rem;
   display: flex;
   justify-content: space-evenly;
   
@@ -33,15 +31,37 @@ header {
   margin-top: 2.5rem;
   border: 3px solid black;
   border-radius: 10px;
-  padding: 3rem;
+  padding: 1.8rem;
   width: 500px;
 }
 
-#lengthForm > div {
+button {
+  cursor: pointer;
+}
+
+#lengthForm,
+#weightForm,
+#temperatureForm {
+  margin: auto;
+  width: 300px;
+  padding: 1.7rem;
+}
+
+#lengthForm > div,
+#weightForm > div,
+#temperatureForm > div {
   text-align: center;
   display: flex;
   flex-direction: column;
   margin-bottom: 0.5rem;
+}
+
+.on {
+  display: block; 
+}
+
+.not-active {
+  display: none;
 }
 
 label {
@@ -52,13 +72,16 @@ label {
 input {
   display: flex;
   margin: auto;
-  height: 2rem;
-  width: 15.5rem;
+  height: 2.5rem;
+  width: 100%;
   border: 3px solid black;
-  border-radius: 5px; 
+  border-radius: 10px; 
+  padding: 5px;
 }
 
-#lengthForm > button {
+#lengthForm > button,
+#weightForm > button,
+#temperatureForm > button {
   display: flex;
   margin: auto;
   justify-content: center;
@@ -70,3 +93,9 @@ input {
   margin-top: 2rem;
   font-size: larger;
 }
+/* 
+#lengthForm > button:hover,
+#widthForm > button:hover {
+#widthForm > button:hover {
+  cursor: pointer;
+} */

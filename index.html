@@ -16,17 +16,60 @@
   </header>
 
   <main>
-    <div class="unit-title-container">
-      <h1 class="active">Length</h1>
-      <h1>Weigth</h1>
-      <h1>Temperature</h1>
-    </div>
 
     <section class="form-container">
+      <div class="unit-title-container">
+        <h1 id="length-section" class="active">Length</h1>
+        <h1 id="weight-section">Weight</h1>
+        <h1 id="temperature-section">Temperature</h1>
+      </div>
+
       <form id="lengthForm">
         <div>
-          <label for="lengthForm">Enter the length to convert</label>
-          <input id="lengthForm" type="text" required />
+          <label for="lengthValue">Enter the length to convert</label>
+          <input id="lengthValue" type="number" required />
+        </div>
+
+        <div>
+          <label for="baseUnit">Unit to convert from</label>
+          <input id="baseUnit" type="number" required />
+        </div>
+
+        <div>
+          <label for="resultUnit">Unit to convert to</label>
+          <input id="resultUnit" type="number" required />
+        </div>
+
+        <button>
+          Convert
+        </button>
+      </form>
+
+      <form id="weightForm" class="not-active">
+        <div>
+          <label for="weightValue">Enter the weight to convert</label>
+          <input id="weightValue" type="text" required />
+        </div>
+
+        <div>
+          <label for="baseUnit">Unit to convert from</label>
+          <input id="baseUnit" type="text" required />
+        </div>
+
+        <div>
+          <label for="resultUnit">Unit to convert to</label>
+          <input id="resultUnit" type="text" required />
+        </div>
+
+        <button>
+          Convert
+        </button>
+      </form>
+
+      <form id="temperatureForm" class="not-active">
+        <div>
+          <label for="temperatureValue">Enter the temperature to convert</label>
+          <input id="temperatureValue" type="text" required />
         </div>
 
         <div>
@@ -44,6 +87,8 @@
         </button>
       </form>
     </section>
+
+    <script src="script/index.js"></script>
   </main>
 </body>
 
