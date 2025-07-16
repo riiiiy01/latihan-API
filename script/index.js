@@ -8,6 +8,22 @@ const weightForm = document.getElementById("weightForm");
 const lengthForm = document.getElementById("lengthForm");
 const temperatureForm = document.getElementById("temperatureForm");
 
+const form = document.getElementById("lengthForm");
+const resultUnitInput = form.elements.resultUnit;
+const baseUnitSelect = document.getElementById("baseUnit");
+const resultUnitSelect = document.getElementById("resultUnit");
+
+
+// resultUnitInput.addEventListener("invalid", (event) => {
+
+  
+// });
+
+// if (baseUnitSelect.value == resultUnitSelect.value) {
+//   warnElement
+// }
+
+
 lengthSection.addEventListener("click", function () {
   if (temperatureSection.classList.contains("active")) {
     temperatureForm.classList.toggle("not-active");
@@ -58,3 +74,25 @@ temperatureSection.addEventListener("click", function () {
     temperatureSection.classList.toggle("active");
   }
 });
+
+
+lengthForm.addEventListener("submit", function(e) {
+  e.preventDefault()
+
+  const userChoice = document.getElementById("baseUnit").value;
+  const lengthValue = document.getElementById("lengthValue").value;
+  const resultUnit = document.getElementById("resultUnit").value;
+
+  if (resultUnitSelect.value === baseUnitSelect.value) {
+    resultUnitSelect.setCustomValidity("can't put the same unit as baseUnit!\n choose another unit to convert!");
+    return
+  } else {
+      resultUnitSelect.setCustomValidity("");
+  }
+
+  console.log(`kamu milih ${userChoice}`);
+  console.log(`kamu milih ${lengthValue}`);
+  console.log(`${resultUnit}`);
+
+  this.reset();
+})

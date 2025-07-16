@@ -39,6 +39,22 @@ button {
   cursor: pointer;
 }
 
+select {
+  font-size: 1rem;
+  transition: all 150ms linear;
+}
+
+/* select {
+  display: block;
+
+  padding: 0.5rem 0.3rem;
+  border: 1px solid black;
+  border-radius: 2px;
+
+  width: 100%;
+  max-width: 300px;
+} */
+
 #lengthForm,
 #weightForm,
 #temperatureForm {
@@ -69,7 +85,7 @@ label {
   margin-bottom: 0.5rem;
 }
 
-input {
+input, select {
   display: flex;
   margin: auto;
   height: 2.5rem;

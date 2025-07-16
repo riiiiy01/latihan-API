@@ -28,16 +28,39 @@
         <div>
           <label for="lengthValue">Enter the length to convert</label>
           <input id="lengthValue" type="number" required />
+
         </div>
 
         <div>
           <label for="baseUnit">Unit to convert from</label>
-          <input id="baseUnit" type="number" required />
+          <!-- <input id="baseUnit" type="number" required /> -->
+          <select name="baseUnit" id="baseUnit" required>
+            <option value="" disabled selected>Choose one units</option>
+            <option value="cm">centimeter(cm)</option>
+            <option value="mm">milimeter(mm)</option>
+            <option value="m">meter(m)</option>
+            <option value="km">kilometer(km)</option>
+            <option value="i">inch(i)</option>
+            <option value="foot">foot(f)</option>
+            <option value="yard">yard(y)</option>
+            <option value="mil">mile(mil)</option>
+          </select>
         </div>
 
         <div>
-          <label for="resultUnit">Unit to convert to</label>
-          <input id="resultUnit" type="number" required />
+          <label for="resultUnit">Unit result</label>
+          <select name="resultUnit" id="resultUnit" required>
+            <option value="" disabled selected>Choose one units</option>
+            <option value="cm">centimeter(cm)</option>
+            <option value="mm">milimeter(mm)</option>
+            <option value="m">meter(m)</option>
+            <option value="km">kilometer(km)</option>
+            <option value="i">inch(i)</option>
+            <option value="foot">foot(f)</option>
+            <option value="yard">yard(y)</option>
+            <option value="mil">mile(mil)</option>
+          </select>
+          <!-- <input id="resultUnit" type="number" required /> -->
         </div>
 
         <button>
@@ -87,7 +110,6 @@
         </button>
       </form>
     </section>
-
     <script src="script/index.js"></script>
   </main>
 </body>
